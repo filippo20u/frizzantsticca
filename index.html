@@ -5,188 +5,197 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dr. Jeane Bosch | Psychological Services</title>
 <meta name="description" content="Culturally aware, evidence-based therapy for adults in California, by secure telehealth.">
-<meta name="theme-color" content="#FBF3E0">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%233F4263'/%3E%3Ctext x='50' y='67' font-size='46' text-anchor='middle' fill='%23FBF3E0' font-family='Georgia,serif'%3EJB%3C/text%3E%3C/svg%3E">
-<script>document.documentElement.classList.add('js')</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%231F5F59'/%3E%3Ctext x='50' y='67' font-size='46' text-anchor='middle' fill='white' font-family='Georgia,serif'%3EJB%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#F4F2EE">
+<meta property="og:title" content="Dr. Jeane Bosch | Psychological Services">
+<meta property="og:description" content="Culturally aware, evidence-based therapy for adults in California, by secure telehealth.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Open+Sans:wght@400;500;600&family=Montserrat:wght@600&display=swap" rel="stylesheet">
 <style>
-:root{--sand:#FBF3E0;--sand2:#F3E9D2;--gold:#C2A04A;--pri:#3F4263;--sec:#765D72;--acc:#C9BEDC;--ink:#2B2B3A;--neu:#E6D9C3;
---ease:cubic-bezier(.23,1,.32,1);--serif:'Fraunces',Georgia,serif;--sans:'Open Sans',system-ui,sans-serif;
---gut:max(1.25rem,calc((100vw - 1120px)/2))}
+:root{--sand:#F4F2EE;--pri:#1F5F59;--sec:#3E7D73;--acc:#A7C1B5;--ink:#2E2E2E;--neu:#D9D2C3;--deep:#0A1A17;
+--ease:cubic-bezier(.23,1,.32,1);--serif:'Fraunces',Georgia,serif;--sans:'Open Sans',system-ui,sans-serif}
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:80px}
-body{margin:0;background:var(--sand);color:var(--ink);font:400 17px/1.65 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:clip}
-h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.15;letter-spacing:-.015em;margin:0 0 .5em;text-wrap:balance}
-h1{font-size:clamp(2.2rem,4.8vw,3.7rem)}h2{font-size:clamp(1.9rem,3.6vw,2.7rem)}h3{font-size:1.15rem}
-p{margin:0 0 1em;text-wrap:pretty}a{color:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:var(--sand);color:var(--ink);font:400 17px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.2;letter-spacing:-.01em;margin:0 0 .6em;text-wrap:balance}
+h1{font-size:clamp(2.1rem,4.4vw,3.2rem)}h2{font-size:clamp(1.8rem,3.4vw,2.6rem)}h3{font-size:1.25rem}
+p{margin:0 0 1em;text-wrap:pretty}
+a{color:var(--pri)}
 .w{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+section{padding:clamp(3.5rem,8vw,6.25rem) 0}
 :focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:6px}
-header{position:sticky;top:0;z-index:30;background:var(--sand2);border-bottom:1px solid var(--neu)}
-header .w{display:flex;align-items:center;justify-content:space-between;min-height:68px;gap:1rem}
-.logo{font:600 .95rem/1 'Montserrat',var(--sans);letter-spacing:.11em;text-transform:uppercase;color:var(--pri);text-decoration:none;white-space:nowrap}
-nav{display:flex;align-items:center;gap:1.35rem}
-nav a{color:var(--pri);text-decoration:none;font-weight:600;font-size:.93rem;white-space:nowrap}
-.btn{display:inline-block;background:var(--gold);color:#23233A;border:1px solid var(--gold);border-radius:999px;padding:.8rem 1.7rem;font:600 1rem var(--sans);text-decoration:none;cursor:pointer;transition:transform 160ms var(--ease),box-shadow 200ms var(--ease)}
-.btn.lt{background:var(--gold);color:#23233A;border-color:var(--gold)}
-nav .btn{padding:.55rem 1.2rem;color:#23233A}
-@media (hover:hover){.btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(28,30,56,.22)}nav a:not(.btn):hover{text-decoration:underline;text-underline-offset:6px}}
+
+header{position:sticky;top:0;z-index:20;background:var(--sand);border-bottom:1px solid var(--neu)}
+header .w{display:flex;align-items:center;justify-content:space-between;min-height:72px;gap:1rem}
+.logo{font:600 .95rem/1 'Montserrat',var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--pri);text-decoration:none;white-space:nowrap}
+nav{display:flex;align-items:center;gap:2rem}
+nav a{color:var(--pri);text-decoration:none;font-weight:500;position:relative}
+nav a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:2px;background:var(--sec);transform:scaleX(0);transform-origin:left;transition:transform 240ms var(--ease)}
+@media (hover:hover){nav a:not(.btn):hover::after{transform:scaleX(1)}}
+.btn{display:inline-block;border:1px solid var(--pri);background:var(--pri);color:#fff;border-radius:6px;padding:.75rem 1.4rem;font:600 1rem var(--sans);text-decoration:none;cursor:pointer;transition:transform 160ms var(--ease),box-shadow 200ms var(--ease),background 200ms var(--ease),color 200ms var(--ease)}
+nav .btn{background:transparent;color:var(--pri);padding:.6rem 1.1rem}
+@media (hover:hover){.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(31,95,89,.28)}nav .btn:hover{background:var(--pri);color:#fff}}
 .btn:active{transform:scale(.97);box-shadow:none}
-.menu{display:none;background:none;border:1px solid var(--pri);color:var(--pri);border-radius:8px;width:44px;height:40px;font-size:1.3rem;line-height:1;cursor:pointer}
-@media (max-width:1120px){.menu{display:block}nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--sand2);flex-direction:column;align-items:stretch;gap:0;padding:.4rem 1.25rem 1.2rem;border-bottom:1px solid var(--neu);box-shadow:0 16px 30px rgba(28,30,56,.12)}nav.open{display:flex}nav a{padding:.8rem 0;border-bottom:1px solid var(--neu)}nav .btn{margin-top:.9rem;text-align:center;border-bottom:0}}
+.menu{display:none;background:none;border:1px solid var(--pri);color:var(--pri);border-radius:8px;width:44px;height:40px;font-size:1.3rem;line-height:1;cursor:pointer;transition:transform 160ms var(--ease)}
+.menu:active{transform:scale(.95)}
+@media (max-width:980px){.menu{display:block}nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--sand);flex-direction:column;align-items:stretch;gap:0;padding:.4rem 1.25rem 1.2rem;border-bottom:1px solid var(--neu);box-shadow:0 16px 30px rgba(10,26,23,.12)}nav.open{display:flex}nav a:not(.btn){padding:.85rem 0;border-bottom:1px solid var(--neu)}nav a:not(.btn)::after{display:none}nav .btn{margin-top:.9rem;text-align:center}}
 
-.sec{position:relative;padding-bottom:clamp(6rem,11vw,9.5rem)}
-.wv{position:absolute;left:0;bottom:-1px;width:100%;height:clamp(60px,9vw,130px);display:block}
+.hero{background:url('assets/hero-bg.jpg') center/cover no-repeat,linear-gradient(160deg,var(--sec),var(--pri))}
+.card{display:grid;grid-template-columns:1fr 1fr;border-radius:30px;overflow:hidden;background:#fff;box-shadow:0 19px 100px rgba(10,26,23,.25);animation:rise 800ms var(--ease) both}
+.card img{width:100%;height:100%;min-height:380px;object-fit:cover;display:block}
+.card .t{background:var(--sand);padding:clamp(1.8rem,4vw,3rem) clamp(1.5rem,4vw,3.2rem);display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.card .kicker{font:600 1rem var(--sans);color:var(--sec);margin:0 0 1rem}
+.card p{color:#4a4a47;max-width:46ch}
+.card h1{font-size:clamp(1.9rem,3.1vw,2.7rem);line-height:1.12;margin-bottom:.5em}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@media (max-width:820px){.card{grid-template-columns:1fr}.card img{min-height:260px;max-height:340px}}
 
-.hero{background:var(--sand2)}
-.hero .w{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center;padding-top:clamp(2rem,5vw,4rem)}
-.hero h1{color:var(--pri)}
-.hero h4{font:600 1rem var(--sans);color:var(--sec);margin:0 0 1rem}
-.hero .lead{font-size:1.15rem;color:#4a4a47;max-width:38ch;margin-bottom:1.8rem}
-.ph{position:relative;justify-self:center;width:min(100%,430px)}
-.ph::before{content:"";position:absolute;inset:8% -8% -6% 10%;background:var(--acc);opacity:.5;border-radius:58% 42% 46% 54%/50% 56% 44% 50%}
-.ph img{position:relative;display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;border-radius:46% 54% 50% 50%/36% 40% 60% 64%;box-shadow:0 24px 60px rgba(28,30,56,.22)}
-.in{opacity:0;transform:translateY(16px);animation:in 700ms var(--ease) forwards}
-.d1{animation-delay:90ms}.d2{animation-delay:190ms}.d3{animation-delay:290ms}
-@keyframes in{to{opacity:1;transform:none}}
-@media (max-width:860px){.hero .w{grid-template-columns:1fr}.ph{order:-1;width:min(70%,320px)}}
+.two{display:grid;grid-template-columns:1fr 1.3fr;gap:3rem;align-items:start}
+@media (max-width:860px){.two{grid-template-columns:1fr;gap:1.5rem}}
+.cols{columns:2;column-gap:3rem}.cols p{break-inside:avoid}
+@media (max-width:860px){.cols{columns:1}}
 
-.dark{background:var(--pri);color:rgba(255,255,255,.9);padding-top:clamp(3rem,6vw,4.5rem)}
-.help{display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
-.blob{background:var(--sand);color:var(--ink);border-radius:0 52% 48% 0/0 30% 70% 0;padding:clamp(2.5rem,5vw,4rem) clamp(2.5rem,6vw,5rem) clamp(2.5rem,5vw,4rem) var(--gut)}
-.blob h2{color:var(--pri)}
-.right{padding:clamp(2.5rem,5vw,4rem) var(--gut) clamp(2.5rem,5vw,4rem) clamp(2rem,5vw,4rem)}
-.right h2{color:#fff}.right h3{color:var(--acc);margin:1.3rem 0 .2rem}.right h3+p{margin:0;font-size:.97rem}
-@media (max-width:860px){.help{grid-template-columns:1fr}.blob{border-radius:0 0 46% 46%/0 0 40px 40px;padding-right:var(--gut)}.right{padding:2.5rem var(--gut)}}
+.green{background:var(--pri);color:rgba(255,255,255,.88)}
+.green h2,.green h3{color:#fff}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2.2rem 2.5rem;margin-top:2.5rem}
+.grid h3{color:var(--acc);font-size:1.15rem;margin-bottom:.4rem}.grid p{margin:0;font-size:.97rem}
+@media (max-width:860px){.grid{grid-template-columns:1fr 1fr}}@media (max-width:560px){.grid{grid-template-columns:1fr}}
 
-.how{background:var(--sec);color:#fff;padding-top:clamp(3rem,6vw,4.5rem)}
-.how h2{color:#fff}.how p.l{max-width:60ch;color:rgba(255,255,255,.9)}
-.st{display:grid;grid-template-columns:repeat(4,1fr);gap:1.6rem;margin-top:2rem}
-.st i{font-style:normal;font-size:1.7rem;width:62px;height:62px;border-radius:50%;background:var(--pri);display:grid;place-items:center;margin-bottom:.8rem;transition:transform 240ms var(--ease)}
-@media (hover:hover){.st div:hover i{transform:scale(1.08)}}
-.st h3{color:#fff;font-size:1.05rem;margin-bottom:.3rem}.st p{margin:0;font-size:.93rem;opacity:.92}
-@media (max-width:900px){.st{grid-template-columns:1fr 1fr}}@media (max-width:520px){.st{grid-template-columns:1fr}}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;margin-top:2.5rem;text-align:center}
+.steps .e{width:64px;height:64px;border-radius:50%;background:rgba(167,193,181,.45);display:grid;place-items:center;margin:0 auto 1rem}
+.steps .e svg{width:30px;height:30px;fill:none;stroke:var(--pri);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.steps h3{font-size:1.1rem}.steps p{font-size:.95rem;margin:0}
+@media (max-width:860px){.steps{grid-template-columns:1fr 1fr}}@media (max-width:520px){.steps{grid-template-columns:1fr}}
 
-.rates{padding-top:clamp(3rem,6vw,4.5rem)}.rates h2{color:var(--pri)}
-.pr{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:1.6rem}
-.pc{background:#fff;border-radius:28px 28px 28px 8px;padding:1.6rem;box-shadow:0 1px 2px rgba(28,30,56,.06);transition:transform 240ms var(--ease),box-shadow 240ms var(--ease)}
-@media (hover:hover){.pc:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(63,66,99,.14)}}
-.pc h3{color:var(--pri);margin-bottom:.8rem}.pc p,.pc small{font-size:.95rem;color:#555}.pc small{display:block;font-size:.88rem}
-.pl{display:flex;justify-content:space-between;gap:1rem;align-items:baseline;border-top:1px solid var(--neu);padding:.7rem 0}
-.pl b{font:500 1.7rem var(--serif);color:var(--pri)}
-@media (max-width:860px){.pr{grid-template-columns:1fr}}
+.sage{background:var(--acc);color:var(--deep)}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
+.box{background:rgba(255,255,255,.55);border-radius:10px;padding:1.6rem}
+.box h3{margin-bottom:.8rem}.box p{margin:0 0 .8rem}.box small{display:block;font-size:.88rem}
+.price{display:flex;justify-content:space-between;gap:1rem;border-top:1px solid rgba(10,26,23,.2);padding:.8rem 0}
+.price b{font:500 1.5rem var(--serif);color:var(--pri)}
+@media (max-width:860px){.three{grid-template-columns:1fr}}
 
 .white{background:#fff}
-.fq{display:grid;grid-template-columns:.8fr 1.2fr;gap:3rem;padding-top:clamp(3rem,6vw,4.5rem)}.fq h2{color:var(--pri)}
 details{border-top:1px solid var(--neu)}details:last-of-type{border-bottom:1px solid var(--neu)}
 summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:1rem;padding:1.1rem 0;font-weight:600}
 summary::-webkit-details-marker{display:none}
 summary::after{content:"+";font:400 1.5rem/1 var(--sans);color:var(--pri);transition:transform 220ms var(--ease)}
 details[open] summary::after{transform:rotate(45deg)}
-details[open] .a{animation:in 320ms var(--ease) forwards}
+details[open] .a{animation:rise 320ms var(--ease)}
 .a{padding:0 0 1.2rem;color:#555}.a p{margin:0}
-@media (max-width:860px){.fq{grid-template-columns:1fr;gap:1rem}}
 
-.res{background:var(--pri);color:rgba(255,255,255,.9);padding-top:clamp(3rem,6vw,4.5rem)}.res h2{color:#fff}
-.res h3.h{font-size:1.5rem;margin:3rem 0 .5rem}.res .w>h3.h:first-of-type{margin-top:1.6rem}
-.res .lead{max-width:64ch;color:rgba(255,255,255,.88)}.res .lead a{color:var(--acc)}
-.pu{display:grid;grid-template-columns:64px 1fr;gap:1rem;background:var(--sand);color:var(--ink);border-radius:20px 20px 20px 6px;padding:1.2rem 1.4rem;margin-top:.9rem}
-.pu b{font:500 1.5rem var(--serif);color:var(--sec)}.pu p{margin:0 0 .3em}.pu small{display:block;color:#555;font-size:.92rem}
-.apps{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.1rem;margin-top:1.1rem}
-.app{background:var(--sand);color:var(--ink);border-radius:24px 24px 6px 24px;padding:1.3rem;display:grid;grid-template-columns:84px 1fr;gap:1rem;align-content:start;transition:transform 240ms var(--ease),box-shadow 240ms var(--ease)}
-@media (hover:hover){.app:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,.25)}}
-.app img.p{width:84px;height:84px;object-fit:contain;border-radius:14px;background:#fff}
-.app h3{color:var(--pri);margin:0 0 .25rem;font-size:1.15rem}.app p{font-size:.92rem;margin:0 0 .7rem;color:#555}
-.stores{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center}.stores img{height:34px;display:block}.stores a{font-weight:600;font-size:.9rem;color:var(--pri)}
-.lks{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem}
-.lk{display:flex;justify-content:space-between;gap:1rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);border-radius:18px;padding:1.1rem 1.3rem;text-decoration:none;color:#fff;transition:background 200ms var(--ease),transform 200ms var(--ease)}
-@media (hover:hover){.lk:hover{background:rgba(255,255,255,.15);transform:translateY(-2px)}}
-.lk b{display:block;font-weight:600}.lk span{font-size:.9rem;opacity:.85}.lk i{font-style:normal;font-size:1.3rem;color:var(--acc)}
-@media (max-width:760px){.lks{grid-template-columns:1fr}}
-.crisis{display:flex;gap:1rem;justify-content:space-between;align-items:center;flex-wrap:wrap;margin-top:2.4rem;background:#FFF6E5;color:var(--ink);border-left:6px solid #C9962B;border-radius:12px;padding:1rem 1.3rem}
-.cb{display:flex;gap:.6rem;flex-wrap:wrap}.crisis b{display:block;font:500 1.15rem var(--serif)}.crisis p{margin:.2rem 0 0;font-size:.95rem}
-@media (max-width:860px){.rc{grid-template-columns:1fr}}
+.row{display:grid;grid-template-columns:.9fr 1.1fr;gap:3rem;align-items:center;margin-top:3rem}
+.row img{width:100%;border-radius:14px;display:block;background:rgba(255,255,255,.1)}
+.row h3{color:#fff;font-size:1.5rem}
+.row ul{margin:.5rem 0 0;padding-left:1.2rem}
+.more{display:inline-block;margin-top:.8rem;color:#fff;font-weight:600}
+.rcards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2.2rem}
+.rcard{display:flex;flex-direction:column;align-items:flex-start;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:1.8rem;transition:transform 240ms var(--ease),background 240ms var(--ease)}
+@media (hover:hover){.rcard:hover{transform:translateY(-4px);background:rgba(255,255,255,.11)}}
+.ri{width:56px;height:56px;border-radius:50%;background:rgba(167,193,181,.22);display:grid;place-items:center;margin-bottom:1.1rem}
+.ri svg{width:26px;height:26px;fill:none;stroke:var(--acc);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.rcard h3{font-size:1.25rem}.rcard p{font-size:.97rem}.rcard .sm{font-size:.88rem;opacity:.8}.rcard .more{margin-top:auto;padding-top:.4rem}
+.green .crisis{margin-top:1.6rem}
+@media (max-width:900px){.rcards{grid-template-columns:1fr}}
+.art{aspect-ratio:4/3;border-radius:14px;overflow:hidden;background:linear-gradient(145deg,#2E7A71,#174E49);box-shadow:0 18px 40px rgba(0,0,0,.18)}
+.art svg{width:100%;height:100%;display:block}
+.art .pulse{transform-box:fill-box;transform-origin:center;animation:breathe 6s ease-in-out infinite}
+@keyframes breathe{0%,100%{transform:scale(.9)}50%{transform:scale(1.08)}}
+@media (max-width:860px){.row{grid-template-columns:1fr;gap:1.2rem}}
+.crisis{margin-top:1.4rem;background:#FFF6E5;color:var(--ink);border-left:6px solid #C9962B;border-radius:10px;padding:1rem 1.2rem}
+.crisis b{display:block;font:500 1.15rem var(--serif)}.crisis p{margin:.3rem 0 0;font-size:.95rem}
 
-.contact{background:radial-gradient(circle at 88% 12%,rgba(201,190,220,.22),transparent 38%),radial-gradient(circle at 8% 100%,rgba(255,255,255,.08),transparent 40%),linear-gradient(170deg,#765D72,#5A4A6C);color:#fff;padding:clamp(3rem,6vw,5rem) 0}
-.contact h2{color:#fff}.cg{display:grid;grid-template-columns:1fr 1.05fr;gap:3rem;align-items:center}
+.contact{background:linear-gradient(90deg,rgba(244,242,238,.95) 0%,rgba(244,242,238,.82) 40%,rgba(244,242,238,.28) 100%),url('assets/contact-bg.jpg') center/cover no-repeat,linear-gradient(160deg,#E9E4D8,#F4F2EE);color:var(--ink)}
+.contact h2{color:var(--pri)}.contact form{background:#fff}.contact .two{align-items:center}
 .contact .note{font-size:.95rem;opacity:.92}
-form{background:var(--sand);color:var(--ink);border-radius:48px 48px 48px 12px;padding:clamp(1.6rem,4vw,2.4rem);display:grid;gap:1rem;box-shadow:0 24px 60px rgba(0,0,0,.22)}
+form{background:#fff;color:var(--ink);border-radius:10px;padding:2rem;display:grid;gap:1rem;box-shadow:0 20px 60px rgba(10,26,23,.3)}
 label{display:grid;gap:.35rem;font-weight:600;font-size:.93rem}
-input,textarea{font:inherit;color:inherit;background:#fff;border:1px solid var(--neu);border-radius:10px;padding:.7rem .85rem;transition:border-color 160ms var(--ease),box-shadow 160ms var(--ease)}
-input:focus,textarea:focus{outline:none;border-color:var(--pri);box-shadow:0 0 0 4px rgba(201,190,220,.5)}
-textarea{min-height:120px;resize:vertical}form .btn{justify-self:start}.disc{font-size:.85rem;color:#666;margin:0}
-@media (max-width:860px){.cg{grid-template-columns:1fr;gap:2rem}}
-footer{background:var(--ink);color:rgba(255,255,255,.8);padding:2.5rem 0;font-size:.95rem}
-footer .w{display:flex;justify-content:space-between;gap:1.5rem;flex-wrap:wrap}footer b{display:block;color:#fff;font:500 1.1rem var(--serif)}footer a{color:var(--acc)}
-header{transition:box-shadow 240ms var(--ease)}header.scrolled{box-shadow:0 8px 24px rgba(28,30,56,.1)}
-.js .rv{opacity:0;transform:translateY(18px);transition:opacity 700ms var(--ease),transform 700ms var(--ease);transition-delay:var(--d,0ms)}.js .rv.on{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none}html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.in{opacity:1;transform:none}}
+input,textarea{font:inherit;color:inherit;border:1px solid var(--neu);border-radius:8px;padding:.7rem .85rem;transition:border-color 160ms var(--ease),box-shadow 160ms var(--ease)}
+input:focus,textarea:focus{outline:none;border-color:var(--pri);box-shadow:0 0 0 4px rgba(167,193,181,.5)}
+textarea{min-height:130px;resize:vertical}
+form .btn{justify-self:start}.disc{font-size:.85rem;color:#666;margin:0}
+
+footer{background:var(--ink);color:rgba(255,255,255,.8);padding:3rem 0;font-size:.95rem}
+footer .w{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap}
+footer b{display:block;color:#fff;font:500 1.1rem var(--serif);margin-bottom:.3rem}footer a{color:var(--acc)}
+
+/* --- movimento discreto --- */
+@view-transition{navigation:auto}
+header{view-transition-name:site-header;transition:box-shadow 240ms var(--ease)}
+header.scrolled{box-shadow:0 8px 24px rgba(10,26,23,.09)}
+section,.top{position:relative}
+.wave{position:absolute;left:0;right:0;bottom:-1px;height:clamp(26px,3.6vw,44px);overflow:hidden;pointer-events:none;line-height:0;z-index:1}
+.wave.top{top:-1px;bottom:auto;transform:scaleY(-1)}
+.wave svg{display:block;width:200%;height:100%;fill:var(--c);animation:drift 70s linear infinite}
+@keyframes drift{to{transform:translateX(-50%)}}
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity 700ms var(--ease),transform 700ms var(--ease);transition-delay:var(--d,0ms)}
+.js .rv.on{opacity:1;transform:none}
+nav a.active::after{transform:scaleX(1)}
+@media (prefers-reduced-motion:reduce){@view-transition{navigation:none}.wave svg{animation:none}.js .rv{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 <header><div class="w">
 <a class="logo" href="#top">Dr. Jeane Bosch</a>
-<nav aria-label="Main"><a href="#about">About</a><a href="#approach">My approach</a><a href="#how">How it works</a><a href="#rates">Rates and insurance</a><a href="#faq">F.A.Q.</a><a href="#resources">Resources</a><a class="btn" href="#contact">Get started</a></nav>
-<button class="menu" aria-label="Menu" aria-expanded="false">☰</button>
+<nav aria-label="Main"><a href="#about">About</a><a href="#approach">My approach</a><a href="#how">How it works</a><a href="#rates">Rates and insurance</a><a href="#faq">F.A.Q.</a><a href="resources.html">Resources</a><a class="btn" href="#contact">Get started</a></nav>
+<button class="menu" aria-label="Open menu" aria-expanded="false">☰</button>
 </div></header>
 
 <main id="top">
-<section class="sec hero"><div class="w">
-<div>
-<h4 class="in">Jeane Bosch PhD, MPH</h4>
-<h1 class="in d1">Culturally aware, evidence-based therapy tailored to your journey</h1>
-<p class="lead in d2">Hello, I’m Dr. Jeane Bosch, a Licensed Clinical Psychologist based in San Diego, California (PSY30821).</p>
-<a class="btn in d3" href="#contact">Book a free 15-minute call</a>
-</div>
-<div class="ph in d2"><img src="assets/jeane-bosch.jpg" alt="Dr. Jeane Bosch" onerror="this.onerror=null;this.src='https://cdn.dorik.com/6949f5ed362c4400291e970d/images/IMG_26792-ClbHA.jpg'"></div>
-</div>
-<svg class="wv" viewBox="0 0 1440 140" preserveAspectRatio="none" aria-hidden="true"><path d="M0 80C220 10 470 150 760 80S1200 10 1440 90V140H0Z" fill="#3F4263"/></svg>
-</section>
+<section class="hero"><div class="w"><div class="card">
+<img src="assets/jeane-bosch.jpg" onerror="this.onerror=null;this.src='https://cdn.dorik.com/6949f5ed362c4400291e970d/images/IMG_26792-ClbHA.jpg'" alt="Dr. Jeane Bosch">
+<div class="t">
+<p class="kicker">Jeane Bosch PhD, MPH</p>
+<h1>Culturally aware, evidence-based therapy tailored to your journey</h1>
+<p>Hello, I’m Dr. Jeane Bosch, a Licensed Clinical Psychologist based in San Diego, California (PSY30821).</p>
+<a class="btn" href="#contact">Book a free 15-minute call</a>
+</div></div></div><div class="wave" style="--c:#F4F2EE" aria-hidden="true"><svg viewBox="0 0 2880 48" preserveAspectRatio="none"><path d="M0 30C240 40 480 38 720 28S1200 20 1440 30C1680 40 1920 38 2160 28S2640 20 2880 30V48H0Z"/></svg></div></section>
 
-<section class="sec dark" id="about"><div class="help">
-<div class="blob"><h2>My background</h2>
+<section id="about"><div class="w two">
+<h2>My background</h2>
+<div class="cols">
 <p>I specialize in helping individuals heal from trauma, depression, and the lasting impact of interpersonal violence, using evidence-based approaches that are both effective and compassionate.</p>
 <p>As a Filipino-American who has worked with people from diverse backgrounds, I deeply value the role of cultural identity in our emotional lives. I strive to create a space where all aspects of who you are, your race, gender, sexuality, or socioeconomic status, are acknowledged and respected.</p>
 <p>I earned my PhD in Clinical Psychology from Saint Louis University and a Master of Public Health from San Francisco State University. My clinical work has included trauma-focused care in several settings, including the VA healthcare system.</p>
-<p style="margin:0">Whether you’re navigating painful past experiences, daily stress, or simply feeling stuck, my goal is to provide a safe, inclusive space where you feel seen and supported as you grow.</p></div>
-<div class="right" id="approach"><h2>My approach</h2>
-<p>I provide therapy to adults (18 and older) who live in California, exclusively through secure telehealth sessions. I use evidence-based cognitive behavioral therapies tailored to your needs, so you can understand the link between thoughts, emotions, and behavior and build tools that last.</p>
-<h3>Cognitive Behavioral Therapy (CBT)</h3><p>A practical, goal-oriented therapy that helps you identify and shift unhelpful thought patterns. Effective for anxiety, depression, and everyday stress.</p>
-<h3>Cognitive Processing Therapy (CPT)</h3><p>A structured, research-supported treatment for PTSD that looks at how trauma affects beliefs about yourself and the world.</p>
-<h3>Dialectical Behavior Therapy (DBT) skills</h3><p>Strategies for emotional regulation, distress tolerance, and relationships, especially when you feel overwhelmed or reactive.</p>
-<h3>Problem Solving Therapy (PST)</h3><p>An action-oriented approach that builds skills to manage stressors and face obstacles with more clarity.</p>
-<h3>Prolonged Exposure (PE)</h3><p>A highly effective PTSD treatment where you safely approach trauma-related memories and situations you have been avoiding.</p>
-<h3>Mindfulness and strengths-based practice</h3><p>Staying grounded in the present and connected to your resilience as you heal and grow.</p></div>
-</div>
-<svg class="wv" viewBox="0 0 1440 140" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60C260 140 520 10 800 70S1230 130 1440 50V140H0Z" fill="#765D72"/></svg>
-</section>
+<p>Whether you’re navigating painful past experiences, daily stress, or simply feeling stuck, my goal is to provide a safe, inclusive space where you feel seen and supported as you grow.</p>
+</div></div><div class="wave" style="--c:#1F5F59" aria-hidden="true"><svg viewBox="0 0 2880 48" preserveAspectRatio="none"><path d="M0 30C240 40 480 38 720 28S1200 20 1440 30C1680 40 1920 38 2160 28S2640 20 2880 30V48H0Z"/></svg></div></section>
 
-<section class="sec how" id="how"><div class="w">
+<section id="approach" class="green"><div class="w">
+<h2>My approach</h2>
+<p style="max-width:62ch">I provide therapy to adults (18 and older) who live in California, exclusively through secure telehealth sessions. I use evidence-based cognitive behavioral therapies tailored to your needs, so you can understand the link between thoughts, emotions, and behavior and build tools that last.</p>
+<div class="grid">
+<div><h3>Cognitive Behavioral Therapy (CBT)</h3><p>A practical, goal-oriented therapy that helps you identify and shift unhelpful thought patterns. Effective for anxiety, depression, and everyday stress.</p></div>
+<div><h3>Cognitive Processing Therapy (CPT)</h3><p>A structured, research-supported treatment for PTSD that looks at how trauma affects beliefs about yourself and the world.</p></div>
+<div><h3>Dialectical Behavior Therapy (DBT) skills</h3><p>Strategies for emotional regulation, distress tolerance, and relationships, especially when you feel overwhelmed or reactive.</p></div>
+<div><h3>Problem Solving Therapy (PST)</h3><p>An action-oriented approach that builds skills to manage stressors and face obstacles with more clarity.</p></div>
+<div><h3>Prolonged Exposure (PE)</h3><p>A highly effective PTSD treatment where you safely approach trauma-related memories and situations you have been avoiding.</p></div>
+<div><h3>Mindfulness and strengths-based practice</h3><p>Staying grounded in the present and connected to your resilience as you heal and grow.</p></div>
+</div></div><div class="wave" style="--c:#F4F2EE" aria-hidden="true"><svg viewBox="0 0 2880 48" preserveAspectRatio="none"><path d="M0 30C240 40 480 38 720 28S1200 20 1440 30C1680 40 1920 38 2160 28S2640 20 2880 30V48H0Z"/></svg></div></section>
+
+<section id="how"><div class="w">
 <h2>How it works</h2>
-<p class="l">Starting therapy can feel like a big step. I want the process to be comfortable and transparent. Here’s what you can expect:</p>
-<div class="st">
-<div><i>📞</i><h3>Free 15-minute phone consultation</h3><p>A brief call to connect, talk about what you’re looking for, and see if we’re a good fit.</p></div>
-<div><i>💬</i><h3>Initial intake session (60 minutes)</h3><p>We get to know your history, current concerns, and goals for therapy.</p></div>
-<div><i>🗓️</i><h3>Ongoing sessions (50 minutes)</h3><p>Weekly or every other week by secure telehealth, at a pace that fits you.</p></div>
-<div><i>🫂</i><h3>Collaborative, personalized care</h3><p>I tailor each session to your goals, and we check in regularly to stay aligned.</p></div>
-</div></div>
-<svg class="wv" viewBox="0 0 1440 140" preserveAspectRatio="none" aria-hidden="true"><path d="M0 90C240 20 520 130 800 70S1220 20 1440 80V140H0Z" fill="#FBF3E0"/></svg>
-</section>
+<p style="max-width:62ch">Starting therapy can feel like a big step. I want the process to be comfortable and transparent. Here’s what you can expect:</p>
+<div class="steps">
+<div><div class="e" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></div><h3>Free 15-minute phone consultation</h3><p>A brief call to connect, talk about what you’re looking for, and see if we’re a good fit.</p></div>
+<div><div class="e" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 01-11.5 7.2L4 20l1.2-4.3A8 8 0 1121 12z"/></svg></div><h3>Initial intake session (60 minutes)</h3><p>We get to know your history, current concerns, and goals for therapy.</p></div>
+<div><div class="e" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div><h3>Ongoing sessions (50 minutes)</h3><p>Weekly or every other week by secure telehealth, at a pace that fits you.</p></div>
+<div><div class="e" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 14.5c3 0 6 1.8 6 5.5"/></svg></div><h3>Collaborative, personalized care</h3><p>I tailor each session to your goals, and we check in regularly to stay aligned.</p></div>
+</div></div><div class="wave" style="--c:#A7C1B5" aria-hidden="true"><svg viewBox="0 0 2880 48" preserveAspectRatio="none"><path d="M0 30C240 40 480 38 720 28S1200 20 1440 30C1680 40 1920 38 2160 28S2640 20 2880 30V48H0Z"/></svg></div></section>
 
-<section class="sec rates" id="rates"><div class="w">
+<section id="rates" class="sage"><div class="w">
 <h2>Rates and insurance</h2>
-<div class="pr">
-<div class="pc"><h3>Session rates</h3>
-<div class="pl"><span>Individual therapy<small>50 minutes</small></span><b>$275</b></div>
-<div class="pl"><span>Prolonged Exposure (PE)<small>90 minutes. Longer sessions leave room for focused trauma work.</small></span><b>$350</b></div></div>
-<div class="pc"><h3>Insurance</h3><p>I am not currently accepting insurance. I can provide a <strong>superbill</strong> on request, which you may submit to your insurer for possible <strong>out-of-network reimbursement</strong>.</p><small>Please contact your insurer to learn about your coverage.</small></div>
-<div class="pc"><h3>Sliding scale</h3><p>I reserve a limited number of sliding scale spots for clients experiencing financial hardship. If cost is a barrier, mention it during our initial consultation.</p></div>
-</div></div>
-<svg class="wv" viewBox="0 0 1440 140" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70C300 140 560 10 840 80S1250 120 1440 60V140H0Z" fill="#FFFFFF"/></svg>
-</section>
+<div class="three">
+<div class="box"><h3>Session rates</h3>
+<div class="price"><span>Individual therapy<small>50 minutes</small></span><b>$275</b></div>
+<div class="price"><span>Prolonged Exposure (PE)<small>90 minutes. Longer sessions leave room for focused trauma work.</small></span><b>$350</b></div></div>
+<div class="box"><h3>Insurance</h3><p>I am not currently accepting insurance. I can provide a <strong>superbill</strong> on request, which you may submit to your insurer for possible <strong>out-of-network reimbursement</strong>.</p><small>Please contact your insurer to learn about your coverage.</small></div>
+<div class="box"><h3>Sliding scale</h3><p>I reserve a limited number of sliding scale spots for clients experiencing financial hardship. If cost is a barrier, mention it during our initial consultation.</p></div>
+</div></div><div class="wave" style="--c:#FFFFFF" aria-hidden="true"><svg viewBox="0 0 2880 48" preserveAspectRatio="none"><path d="M0 30C240 40 480 38 720 28S1200 20 1440 30C1680 40 1920 38 2160 28S2640 20 2880 30V48H0Z"/></svg></div></section>
 
-<section class="sec white" id="faq"><div class="w fq">
+<section id="faq" class="white"><div class="w two">
 <div><h2>F.A.Q.</h2><p>The questions clients most often ask before starting therapy.</p></div>
 <div>
 <details><summary>What can I expect during our first session?</summary><div class="a"><p>A 60-minute intake where we explore your concerns, background, and goals, and see whether we’re a good fit.</p></div></details>
@@ -196,27 +205,20 @@ header{transition:box-shadow 240ms var(--ease)}header.scrolled{box-shadow:0 8px 
 <details><summary>What forms of payment do you accept?</summary><div class="a"><p>Credit and debit cards, processed securely through SimplePractice. Payment is due at the time of each session.</p></div></details>
 <details><summary>Do you offer a sliding scale?</summary><div class="a"><p>Yes, a limited number of spots for clients facing financial hardship. Bring it up in our initial consultation.</p></div></details>
 <details><summary>What is your cancellation policy?</summary><div class="a"><p>I require at least 24 hours’ notice to cancel or reschedule. Late cancellations or missed appointments are charged the full session fee, except in emergencies.</p></div></details>
-</div></div>
-<svg class="wv" viewBox="0 0 1440 140" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60C260 140 520 10 800 70S1230 130 1440 50V140H0Z" fill="#3F4263"/></svg>
-</section>
+</div></div><div class="wave" style="--c:#1F5F59" aria-hidden="true"><svg viewBox="0 0 2880 48" preserveAspectRatio="none"><path d="M0 30C240 40 480 38 720 28S1200 20 1440 30C1680 40 1920 38 2160 28S2640 20 2880 30V48H0Z"/></svg></div></section>
 
-<section class="sec res" id="resources"><div class="w">
+<section id="resources" class="green"><div class="w">
 <h2>Resources</h2>
-<h3 class="h">Publications and research</h3>
-<p class="lead">These works reflect my commitment to culturally responsive, evidence-based care, particularly in trauma, PTSD, and health equity. Additional peer-reviewed publications are available on request.</p>
-<div class="pu"><b>2024</b><div><p><strong>Bell, S. L., Bosch, J., Tang, J.</strong> COVID-19 and AAPI Healthcare Providers: The Importance of an Ecological Lens. <em>Trauma Psychology News (APA Division 56)</em></p><small>Explores systemic and racialized stressors experienced by AAPI healthcare professionals during the COVID-19 pandemic.</small></div></div><div class="pu"><b>2020</b><div><p><strong>Bosch, J., et al.</strong> PTSD Treatment Response and Quality of Life in Women with Childhood Abuse Histories. <em>Psychological Trauma: Theory, Research, Practice, and Policy</em></p><small>Examines the outcomes of evidence-based PTSD treatment in women with trauma histories.</small></div></div><div class="pu"><b>2019</b><div><p><strong>Bosch, J., et al.</strong> Adverse Childhood Experiences and Oral Health. <em>Journal of Interpersonal Violence</em></p><small>Highlights the connection between early trauma and long-term health outcomes.</small></div></div>
-<h3 class="h">Helpful apps for therapy and wellness</h3>
-<p class="lead">Free evidence-based apps from the U.S. Department of Veterans Affairs National Center for PTSD, to complement our work together. <a href="https://www.ptsd.va.gov/appvid/mobile">See all VA apps</a>.</p>
-<div class="apps"><div class="app"><img class="p" src="assets/app-cpt-coach.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='https://cdn.dorik.com/6949f5ed362c4400291e970d/images/cptcoach-ZiZjb.png'"><div><h3>CPT Coach</h3><p>Supports clients in Cognitive Processing Therapy (CPT), with practice assignments, symptom tracking, and education about trauma recovery.</p><div class="stores"><a href="https://play.google.com/store/apps/details?id=gov.va.mentalhealth.ncptsd.cptcoach3&amp;hl=en_US" aria-label="CPT Coach on Google Play"><img src="assets/badge-google-play.svg" alt="Get it on Google Play" onerror="this.onerror=null;this.src='https://cdn.dorik.com/624c0f1f9f34ad00115b5b4c/6287310b7278ca001136531e/images/button-play_xm7l5ikd.svg'"></a><a href="https://apps.apple.com/tt/app/cpt-coach/id1610072407" aria-label="CPT Coach on the App Store"><img src="assets/badge-app-store.svg" alt="Download on the App Store" onerror="this.onerror=null;this.src='https://cdn.dorik.com/624c0f1f9f34ad00115b5b4c/6287310b7278ca001136531e/images/button-app_j3xe5sh7.svg'"></a></div></div></div><div class="app"><img class="p" src="assets/app-pe-coach.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='https://cdn.dorik.com/6949f5ed362c4400291e970d/images/pecoach-JN7EG.png'"><div><h3>PE Coach</h3><p>For those in Prolonged Exposure Therapy (PE). Helps track progress, record exposures, and access session materials.</p><div class="stores"><a href="https://apps.apple.com/app/id1281266434" aria-label="PE Coach on the App Store"><img src="assets/badge-app-store.svg" alt="Download on the App Store" onerror="this.onerror=null;this.src='https://cdn.dorik.com/624c0f1f9f34ad00115b5b4c/6287310b7278ca001136531e/images/button-app_j3xe5sh7.svg'"></a><a href="https://www.ptsd.va.gov/appvid/mobile">More about PE Coach</a></div></div></div><div class="app"><img class="p" src="assets/app-mindfulness-coach.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='https://cdn.dorik.com/6949f5ed362c4400291e970d/images/mindfullnesscoachplay-9B4vQ.png'"><div><h3>Mindfulness Coach</h3><p>Learn and practice mindfulness meditation to reduce stress, improve emotional balance, and cope with unpleasant thoughts and emotions.</p><div class="stores"><a href="https://www.ptsd.va.gov/appvid/mobile">Learn more and download</a></div></div></div><div class="app"><img class="p" src="assets/app-insomnia-coach.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='https://cdn.dorik.com/6949f5ed362c4400291e970d/images/insmniacoach-kJLFv.png'"><div><h3>Insomnia Coach</h3><p>Based on Cognitive Behavioral Therapy for Insomnia (CBT-i), with a guided plan and tools to track and improve your sleep habits.</p><div class="stores"><a href="https://www.ptsd.va.gov/appvid/mobile">Learn more and download</a></div></div></div><div class="app"><img class="p" src="assets/app-wellwithin-coach.png" alt="" loading="lazy" onerror="this.onerror=null;this.src='https://cdn.dorik.com/6949f5ed362c4400291e970d/images/mindfullnesscoachplay2-sr_VW.png'"><div><h3>WellWithin Coach</h3><p>Designed for women, it supports mental health and common challenges like stress, depression, and trauma at every stage of life. Search “WellWithin Coach” in your app store.</p><div class="stores"></div></div></div></div>
-<h3 class="h">Additional resources</h3>
-<p class="lead">You may also find the following helpful.</p>
-<div class="lks"><a class="lk" href="https://www.ptsd.va.gov"><div><b>National Center for PTSD: self-help tools</b><span>Education and free tools from the VA’s National Center for PTSD.</span></div><i>↗</i></a><a class="lk" href="https://www.nami.org"><div><b>NAMI: PTSD information</b><span>Symptoms, treatment, and stress reduction strategies, including how trauma and PTSD differ.</span></div><i>↗</i></a><a class="lk" href="https://www.apa.org"><div><b>APA: PTSD treatment</b><span>An overview of evidence-based treatments for PTSD, with information for patients and families.</span></div><i>↗</i></a><a class="lk" href="https://www.psychologytools.com"><div><b>Psychology Tools: free worksheets and info</b><span>Free worksheets and guides on common mental health topics.</span></div><i>↗</i></a><a class="lk" href="https://screening.mhanational.org"><div><b>Mental Health America: screening tools</b><span>Free, confidential online screening tools for a range of mental health conditions.</span></div><i>↗</i></a></div>
-<div class="crisis" role="note"><div><b>988 Suicide &amp; Crisis Lifeline</b><p>Free, confidential, and open 24 hours a day. In immediate danger, call 911.</p></div><div class="cb"><a class="btn" href="tel:988">Call 988</a><a class="btn" href="sms:988">Text 988</a></div></div>
+<p style="max-width:62ch">Publications, free apps, and trusted tools. Open the full page for download links and more.</p>
+<div class="rcards">
+<div class="rcard"><div class="ri" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></div><h3>Publications and research</h3><p>These works reflect my commitment to culturally responsive, evidence-based care, particularly in trauma, PTSD, and health equity. Additional peer-reviewed publications are available on request.</p><a class="more" href="resources.html#publications">See publications</a></div>
+<div class="rcard"><div class="ri" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18h2"/></svg></div><h3>Helpful apps for therapy and wellness</h3><p>Free evidence-based apps from the U.S. Department of Veterans Affairs National Center for PTSD, to complement our work together.</p><p class="sm">CPT Coach, PE Coach, Mindfulness Coach, Insomnia Coach, WellWithin Coach</p><a class="more" href="resources.html#apps">See all apps and download links</a></div>
+<div class="rcard"><div class="ri" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M10 14a4 4 0 005.7 0l3-3a4 4 0 00-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 00-5.7 0l-3 3A4 4 0 0011 18.7l1-1"/></svg></div><h3>Additional resources</h3><p>You may also find these helpful: the National Center for PTSD self-help tools, NAMI’s PTSD information, and the APA’s overview of PTSD treatments.</p><a class="more" href="resources.html#more">See all resources</a></div>
 </div>
-<svg class="wv" viewBox="0 0 1440 140" preserveAspectRatio="none" aria-hidden="true"><path d="M0 90C240 20 520 130 800 70S1220 20 1440 80V140H0Z" fill="#765D72"/></svg>
-</section>
+<div class="crisis" role="note"><b>988 Suicide &amp; Crisis Lifeline: call or text 988</b><p>Free, confidential, and open 24 hours a day. In immediate danger, call 911.</p></div>
+</div></section>
 
-<section class="contact" id="contact"><div class="w cg">
+<section id="contact" class="contact"><div class="wave top" style="--c:#1F5F59" aria-hidden="true"><svg viewBox="0 0 2880 48" preserveAspectRatio="none"><path d="M0 30C240 40 480 38 720 28S1200 20 1440 30C1680 40 1920 38 2160 28S2640 20 2880 30V48H0Z"/></svg></div><div class="w two">
 <div>
 <h2>Ready to take the next step?</h2>
 <p>I offer a free 15-minute phone consultation to see if we’re a good fit. It’s a no-pressure space to ask questions and learn how therapy might support you. I typically respond within 2 business days.</p>
@@ -230,10 +232,14 @@ header{transition:box-shadow 240ms var(--ease)}header.scrolled{box-shadow:0 8px 
 <button class="btn" type="submit">Send my request</button>
 <p class="disc">Please do not include sensitive personal or medical information in this form. If you are in crisis, please call 988.</p>
 </form>
-</div></section>
+</div><div class="wave" style="--c:#2E2E2E" aria-hidden="true"><svg viewBox="0 0 2880 48" preserveAspectRatio="none"><path d="M0 30C240 40 480 38 720 28S1200 20 1440 30C1680 40 1920 38 2160 28S2640 20 2880 30V48H0Z"/></svg></div></section>
 </main>
 
-<footer><div class="w"><div><b>California</b>Telehealth for adults who live in California</div><div>Dr. Jeane Bosch, Licensed Clinical Psychologist (PSY30821)</div></div></footer>
+<footer><div class="w">
+<div><b>California</b>Telehealth for adults who live in California</div>
+<div><b>Get in touch</b><a href="#contact">Use the contact form</a></div>
+<div>Dr. Jeane Bosch, Licensed Clinical Psychologist (PSY30821)</div>
+</div></footer>
 
 <script>
 var m=document.querySelector('.menu'),n=document.querySelector('nav');
@@ -244,12 +250,21 @@ e.preventDefault();var d=new FormData(this),
 b='Name: '+d.get('name')+'\nEmail: '+d.get('email')+'\nPhone: '+d.get('phone')+'\n\n'+d.get('msg');
 location.href='mailto:info@jeanebosch.com?subject='+encodeURIComponent('Consultation request')+'&body='+encodeURIComponent(b);
 });
-(function(){var h=document.querySelector('header');function sc(){h.classList.toggle('scrolled',scrollY>8)}sc();addEventListener('scroll',sc,{passive:true});
-if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
-var els=[].slice.call(document.querySelectorAll('section:not(.hero) h2,.blob p,.right h3,.st>div,.pc,details,.pu,.app,.lk,.crisis,.cg>div,form')),cnt=new Map();
-els.forEach(function(el){var p=el.parentNode,i=cnt.get(p)||0;cnt.set(p,i+1);el.classList.add('rv');el.style.setProperty('--d',Math.min(i,5)*80+'ms')});
-var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var el=e.target;el.classList.add('on');io.unobserve(el);setTimeout(function(){el.classList.remove('rv','on');el.style.removeProperty('--d')},1300)})},{threshold:.1,rootMargin:'0px 0px -6% 0px'});
-els.forEach(function(el){io.observe(el)})})();
+(function(){
+var h=document.querySelector('header');
+function sc(){h.classList.toggle('scrolled',window.scrollY>8)}
+sc();window.addEventListener('scroll',sc,{passive:true});
+var ids=['about','approach','how','rates','faq','resources','contact'],links={};
+document.querySelectorAll('nav a[href^="#"]').forEach(function(a){links[a.getAttribute('href').slice(1)]=a});
+if('IntersectionObserver' in window){var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){Object.keys(links).forEach(function(k){links[k].classList.remove('active')});if(links[e.target.id])links[e.target.id].classList.add('active')}})},{rootMargin:'-45% 0px -50% 0px'});
+ids.forEach(function(i){var el=document.getElementById(i);if(el)so.observe(el)})}
+
+if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+var els=[].slice.call(document.querySelectorAll("section:not(.hero) h2, section:not(.hero) .w > p, .cols p, .grid > div, .steps > div, .three > .box, .two > div > p, details, .rcard, .rcards + .crisis, form")),cnt=new Map();
+els.forEach(function(el){var p=el.parentNode,i=cnt.get(p)||0;cnt.set(p,i+1);el.classList.add('rv');el.style.setProperty('--d',Math.min(i,5)*90+'ms')});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var el=e.target;el.classList.add('on');io.unobserve(el);setTimeout(function(){el.classList.remove('rv','on');el.style.removeProperty('--d')},1300)})},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+els.forEach(function(el){io.observe(el)});
+})();
 </script>
 </body>
 </html>
