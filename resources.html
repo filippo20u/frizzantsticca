@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Resources | Dr. Jeane Bosch</title>
 <meta name="description" content="Publications, evidence-based mobile apps, and mental health support tools for trauma survivors.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%231F5F59'/%3E%3Ctext x='50' y='67' font-size='46' text-anchor='middle' fill='white' font-family='Georgia,serif'%3EJB%3C/text%3E%3C/svg%3E">
@@ -12,10 +12,13 @@
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Open+Sans:wght@400;500;600&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Open+Sans:wght@400;500;600&family=Montserrat:wght@600&display=swap" rel="stylesheet">
 <style>
-:root{--sand:#F4F2EE;--pri:#1F5F59;--sec:#3E7D73;--acc:#A7C1B5;--ink:#2E2E2E;--neu:#D9D2C3;--deep:#0A1A17;
+:root{--sand:#F4F2EE;--surface:#FFFFFF;--ink:#2E2E2E;--muted:#4A4A47;--neu:#D9D2C3;--pri:#1F5F59;--pri-bg:#1F5F59;--on-pri:#fff;--sec:#3E7D73;--acc:#A7C1B5;--sage-bg:#A7C1B5;--sage-ink:#0A1A17;--sage-line:rgba(10,26,23,.18);--box:rgba(255,255,255,.55);--chip:rgba(167,193,181,.4);--alert-bg:#FFF6E5;--foot:#2E2E2E;--cta-bg:#3E7D73;--veil:244,242,238;--dim:0;--btn-line:#1F5F59;--focus:#1F5F59;--sec-text:#2F6B62;--pri-s:#164A45;
 --ease:cubic-bezier(.23,1,.32,1);--serif:'Fraunces',Georgia,serif;--sans:'Open Sans',system-ui,sans-serif}
+html[data-theme="dark"]{color-scheme:dark;--sand:#0F1B1A;--surface:#172625;--ink:#E7EEEB;--muted:#AEBDB8;--neu:#2A3E3B;--pri:#8FCABD;--pri-bg:#1A4742;--on-pri:#fff;--sec:#7FB8AB;--sage-bg:#213935;--sage-ink:#E3EEEA;--sage-line:rgba(255,255,255,.16);--box:rgba(255,255,255,.06);--chip:rgba(143,202,189,.16);--alert-bg:#2B2515;--foot:#0A1413;--cta-bg:#28554F;--veil:15,27,26;--dim:.5;--btn-line:#3E7D73;--focus:#8FCABD;--sec-text:#7FB8AB;--pri-s:#8FCABD}
+[hidden]{display:none!important}
+
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:84px}
 body{margin:0;background:var(--sand);color:var(--ink);font:400 17px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
@@ -24,68 +27,68 @@ h1{font-size:clamp(2.3rem,5vw,3.6rem)}h2{font-size:clamp(1.8rem,3.4vw,2.5rem)}h3
 p{margin:0 0 1em;text-wrap:pretty}a{color:var(--pri)}
 .w{width:min(1120px,100% - 2.5rem);margin-inline:auto}
 section{padding:clamp(3.2rem,7vw,5.5rem) 0}
-:focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:6px}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
 
 header{position:sticky;top:0;z-index:20;background:var(--sand);border-bottom:1px solid var(--neu)}
 header .w{display:flex;align-items:center;justify-content:space-between;min-height:72px;gap:1rem}
 .logo{font:600 .95rem/1 'Montserrat',var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--pri);text-decoration:none;white-space:nowrap}
-nav{display:flex;align-items:center;gap:2rem}
-nav a{color:var(--pri);text-decoration:none;font-weight:500;position:relative}
+nav{display:flex;align-items:center;gap:1.5rem}
+nav a{color:var(--pri);text-decoration:none;font-weight:500;font-size:.95rem;white-space:nowrap;position:relative}
 nav a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:2px;background:var(--sec);transform:scaleX(0);transform-origin:left;transition:transform 240ms var(--ease)}
 nav a[aria-current]::after{transform:scaleX(1)}
 @media (hover:hover){nav a:not(.btn):hover::after{transform:scaleX(1)}}
-.btn{display:inline-block;border:1px solid var(--pri);background:var(--pri);color:#fff;border-radius:6px;padding:.7rem 1.3rem;font:600 1rem var(--sans);text-decoration:none;cursor:pointer;transition:transform 160ms var(--ease),box-shadow 200ms var(--ease),background 200ms var(--ease),color 200ms var(--ease)}
+.btn{display:inline-block;border:1px solid var(--btn-line);background:var(--pri-bg);color:var(--on-pri);border-radius:6px;padding:.7rem 1.3rem;font:600 1rem var(--sans);text-decoration:none;cursor:pointer;transition:transform 160ms var(--ease),box-shadow 200ms var(--ease),background 200ms var(--ease),color 200ms var(--ease)}
 nav .btn{background:transparent;color:var(--pri);padding:.6rem 1.1rem}
-@media (hover:hover){.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(31,95,89,.28)}nav .btn:hover{background:var(--pri);color:#fff}}
+@media (hover:hover){.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(31,95,89,.28)}nav .btn:hover{background:var(--pri-bg);color:var(--on-pri)}}
 .btn:active{transform:scale(.97);box-shadow:none}
 .menu{display:none;background:none;border:1px solid var(--pri);color:var(--pri);border-radius:8px;width:44px;height:40px;font-size:1.3rem;line-height:1;cursor:pointer;transition:transform 160ms var(--ease)}
 .menu:active{transform:scale(.95)}
-@media (max-width:980px){.menu{display:block}nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--sand);flex-direction:column;align-items:stretch;gap:0;padding:.4rem 1.25rem 1.2rem;border-bottom:1px solid var(--neu);box-shadow:0 16px 30px rgba(10,26,23,.12)}nav.open{display:flex}nav a:not(.btn){padding:.85rem 0;border-bottom:1px solid var(--neu)}nav a:not(.btn)::after{display:none}nav .btn{margin-top:.9rem;text-align:center}}
+@media (max-width:1100px){.menu{display:block}nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--sand);flex-direction:column;align-items:stretch;gap:0;padding:.4rem 1.25rem 1.2rem;border-bottom:1px solid var(--neu);box-shadow:0 16px 30px rgba(10,26,23,.12)}nav.open{display:flex}nav a:not(.btn){padding:.85rem 0;border-bottom:1px solid var(--neu)}nav a:not(.btn)::after{display:none}nav .btn{margin-top:.9rem;text-align:center}}
 
-.top{background:var(--pri);color:#fff;padding:clamp(3rem,7vw,5rem) 0}
+.top{background:var(--pri-bg);color:#fff;padding:clamp(3rem,7vw,5rem) 0}
 .top h1{margin:0 0 .4em}.top p{max-width:60ch;margin:0;color:rgba(255,255,255,.85);font-size:1.1rem}
 .chips{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.6rem}
 .chips a{color:#fff;border:1px solid rgba(255,255,255,.45);border-radius:99px;padding:.4rem 1rem;text-decoration:none;font-size:.95rem;transition:background 180ms var(--ease)}
 @media (hover:hover){.chips a:hover{background:rgba(255,255,255,.14)}}
 
-.lead{max-width:64ch;color:#4a4a47}
+.lead{max-width:64ch;color:var(--muted)}
 
-.pub{display:grid;grid-template-columns:auto 1fr;gap:1.2rem;background:#fff;border-radius:12px;padding:1.4rem 1.6rem;margin-top:1rem;box-shadow:0 1px 2px rgba(10,26,23,.06)}
-.pub .i{width:46px;height:46px;border-radius:12px;background:rgba(167,193,181,.35);display:grid;place-items:center}.pub .i svg{width:24px;height:24px;fill:none;stroke:var(--pri);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.pub p{margin:0 0 .4em}.pub small{color:#666;font-size:.93rem}.pub em{color:var(--sec);font-style:normal;font-weight:600}
+.pub{display:grid;grid-template-columns:auto 1fr;gap:1.2rem;background:var(--surface);border-radius:12px;padding:1.4rem 1.6rem;margin-top:1rem;box-shadow:0 1px 2px rgba(10,26,23,.06)}
+.pub .i{width:46px;height:46px;border-radius:12px;background:var(--chip);display:grid;place-items:center}.pub .i svg{width:24px;height:24px;fill:none;stroke:var(--pri);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.pub p{margin:0 0 .4em}.pub small{color:var(--muted);font-size:.93rem}.pub em{color:var(--sec-text);font-style:normal;font-weight:600}
 .plink{display:inline-block;margin-top:.7rem;text-decoration:none}.plink:hover{text-decoration:underline;text-underline-offset:4px}
 .on-req{margin-top:1.4rem;font-weight:600;color:var(--pri)}
 
-.white{background:#fff}
+.white{background:var(--surface)}
 .sub{margin:2.6rem 0 .3rem;font-size:1.35rem;color:var(--pri)}
 .apps{display:grid;grid-template-columns:repeat(2,1fr);gap:1.4rem;margin-top:1.2rem}
 .app{display:grid;grid-template-columns:132px 1fr;gap:1.2rem;background:var(--sand);border-radius:14px;padding:1.3rem;align-items:start;transition:transform 240ms var(--ease),box-shadow 240ms var(--ease)}
 @media (hover:hover){.app:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(31,95,89,.14)}}
 .app img.p{width:132px;height:132px;object-fit:contain;border-radius:12px;background:#fff}
-.app h4{font-size:1.2rem;margin:0 0 .3rem}.app p{font-size:.95rem;margin:0 0 .8rem;color:#4a4a47}
+.app h4{font-size:1.2rem;margin:0 0 .3rem}.app p{font-size:.95rem;margin:0 0 .8rem;color:var(--muted)}
 .stores{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
 .stores img{height:38px;display:block;transition:transform 160ms var(--ease)}
 .stores a:active img{transform:scale(.96)}
 .lnk{font-weight:600;font-size:.95rem}
 @media (max-width:860px){.apps{grid-template-columns:1fr}}@media (max-width:480px){.app{grid-template-columns:1fr}}
 
-.sage{background:var(--acc);color:var(--deep)}
+.sage{background:var(--sage-bg);color:var(--sage-ink)}
 .cols{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-top:1.4rem}
-.grp{background:rgba(255,255,255,.55);border-radius:12px;padding:1.6rem}
+.grp{background:var(--box);border-radius:12px;padding:1.6rem}
 .grp h3{margin-bottom:1rem}
-.link{display:block;text-decoration:none;color:var(--deep);padding:.85rem 0;border-top:1px solid rgba(10,26,23,.18);transition:padding 200ms var(--ease)}
-.link b{display:flex;justify-content:space-between;gap:1rem;color:var(--pri)}.link b::after{content:"↗";transition:transform 200ms var(--ease)}
+.link{display:block;text-decoration:none;color:var(--sage-ink);padding:.85rem 0;border-top:1px solid var(--sage-line);transition:padding 200ms var(--ease)}
+.link b{display:flex;justify-content:space-between;gap:1rem;color:var(--pri-s)}.link b::after{content:"↗";transition:transform 200ms var(--ease)}
 .link span{display:block;font-size:.92rem;margin-top:.15rem}
 @media (hover:hover){.link:hover b::after{transform:translate(3px,-3px)}}
 @media (max-width:860px){.cols{grid-template-columns:1fr}}
 
-.crisis{display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:center;background:#FFF6E5;border:1px solid #E8D3A8;border-left:6px solid #C9962B;border-radius:12px;padding:1.6rem}
+.crisis{display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:center;background:var(--alert-bg);border:1px solid #E8D3A8;border-left:6px solid #C9962B;border-radius:12px;padding:1.6rem}
 .crisis h2{font-size:1.6rem;margin:0 0 .3em}.crisis p{margin:0}
 .crisis .b{display:flex;gap:.7rem;flex-wrap:wrap}
 @media (max-width:760px){.crisis{grid-template-columns:1fr}}
 
-.cta{background:var(--sec);color:#fff;text-align:center}
-.cta h2{color:#fff}.cta .btn{background:#fff;color:var(--pri);border-color:#fff}
-footer{background:var(--ink);color:rgba(255,255,255,.8);padding:2.5rem 0;font-size:.95rem}
+.cta{background:var(--cta-bg);color:#fff;text-align:center}
+.cta h2{color:#fff}.cta .btn{background:#fff;color:#1F5F59;border-color:#fff}
+footer{background:var(--foot);color:rgba(255,255,255,.8);padding:2.5rem 0;font-size:.95rem}
 footer .w{display:flex;justify-content:space-between;gap:1.5rem;flex-wrap:wrap}footer a{color:var(--acc)}
 
 /* --- movimento discreto --- */
@@ -99,16 +102,27 @@ section,.top{position:relative}
 .js .rv{opacity:0;transform:translateY(18px);transition:opacity 700ms var(--ease),transform 700ms var(--ease);transition-delay:var(--d,0ms)}
 .js .rv.on{opacity:1;transform:none}
 nav a.active::after{transform:scaleX(1)}
+
+.tg{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;border:1px solid var(--pri);background:none;color:var(--pri);cursor:pointer;transition:transform 160ms var(--ease),background 200ms var(--ease)}
+.tg:active{transform:scale(.93)}.tg svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tg .sun{display:none}html[data-theme="dark"] .tg .sun{display:block}html[data-theme="dark"] .tg .moon{display:none}
+@media (hover:hover){.tg:hover{background:var(--chip)}}
+.rt{display:flex;align-items:center;gap:1.1rem}
+.green :focus-visible,.top :focus-visible,.cta :focus-visible,footer :focus-visible{outline-color:#fff}
+.mbar{display:none}
+@media (max-width:700px){.mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:25;padding:.7rem 1rem calc(.7rem + env(safe-area-inset-bottom,0px));background:var(--sand);border-top:1px solid var(--neu);box-shadow:0 -8px 24px rgba(0,0,0,.1);transition:transform 260ms var(--ease)}.mbar .btn{flex:1;text-align:center;padding:.9rem 1rem}.mbar.hide{transform:translateY(115%)}body{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}}
+.bk{background:var(--surface);color:var(--ink);border-radius:10px;padding:2rem;box-shadow:0 20px 60px rgba(10,26,23,.3)}
+.bk h3{margin-bottom:.4rem}.bk p{color:var(--muted)}.bk .alt{display:block;margin-top:1rem;background:none;border:0;padding:0;font:600 .95rem var(--sans);color:var(--pri);text-decoration:underline;text-underline-offset:4px;cursor:pointer}
 @media (prefers-reduced-motion:reduce){@view-transition{navigation:none}.wave svg{animation:none}.js .rv{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
+<script>(function(){var t;try{t=localStorage.getItem('theme')}catch(e){}if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t)})()</script>
 <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 <header><div class="w">
 <a class="logo" href="index.html">Dr. Jeane Bosch</a>
-<nav aria-label="Main"><a href="index.html#about">About</a><a href="index.html#approach">My approach</a><a href="index.html#how">How it works</a><a href="index.html#rates">Rates and insurance</a><a href="index.html#faq">F.A.Q.</a><a href="resources.html" aria-current="page">Resources</a><a class="btn" href="index.html#contact">Get started</a></nav>
-<button class="menu" aria-label="Open menu" aria-expanded="false">☰</button>
+<div class="rt"><nav aria-label="Main"><a href="index.html#about">About</a><a href="index.html#approach">My approach</a><a href="index.html#how">How it works</a><a href="index.html#rates">Rates and insurance</a><a href="index.html#faq">F.A.Q.</a><a href="resources.html" aria-current="page">Resources</a><a class="btn book" href="index.html#contact">Get started</a></nav><button class="tg" type="button" aria-label="Switch to dark mode" aria-pressed="false"><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 019.5 4a8.5 8.5 0 1010.5 10.5z"/></svg></button><button class="menu" aria-label="Open menu" aria-expanded="false">☰</button></div>
 </div></header>
 
 <main>
@@ -116,7 +130,7 @@ nav a.active::after{transform:scaleX(1)}
 <h1>Resources</h1>
 <p>Publications, free evidence-based apps, and trusted support tools for trauma, stress, and everyday emotional wellness.</p>
 <div class="chips"><a href="#publications">Publications</a><a href="#apps">Helpful apps</a><a href="#more">Additional resources</a><a href="#crisis">Crisis support</a></div>
-</div><div class="wave" style="--c:#F4F2EE" aria-hidden="true"><svg viewBox="0 0 2880 48" preserveAspectRatio="none"><path d="M0 30C240 40 480 38 720 28S1200 20 1440 30C1680 40 1920 38 2160 28S2640 20 2880 30V48H0Z"/></svg></div></div>
+</div><div class="wave" style="--c:var(--sand)" aria-hidden="true"><svg viewBox="0 0 2880 48" preserveAspectRatio="none"><path d="M0 30C240 40 480 38 720 28S1200 20 1440 30C1680 40 1920 38 2160 28S2640 20 2880 30V48H0Z"/></svg></div></div>
 
 <section id="publications"><div class="w">
 <h2>Publications and research</h2>
@@ -125,7 +139,7 @@ nav a.active::after{transform:scaleX(1)}
 <div class="pub"><div class="i" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></div><div><p><strong>Bosch, J., et al. (2020).</strong> PTSD Treatment Response and Quality of Life in Women with Childhood Abuse Histories.</p><p><em>Psychological Trauma: Theory, Research, Practice, and Policy</em></p><small>Examines the outcomes of evidence-based PTSD treatment in women with trauma histories.</small><a class="lnk plink" href="https://pubmed.ncbi.nlm.nih.gov/31660775/" target="_blank" rel="noopener">View on PubMed <span aria-hidden="true">↗</span></a></div></div>
 <div class="pub"><div class="i" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></div><div><p><strong>Bosch, J., et al. (2019).</strong> Adverse Childhood Experiences and Oral Health.</p><p><em>Journal of Interpersonal Violence</em></p><small>Highlights the connection between early trauma and long-term health outcomes.</small><a class="lnk plink" href="https://pubmed.ncbi.nlm.nih.gov/31081656/" target="_blank" rel="noopener">View on PubMed <span aria-hidden="true">↗</span></a></div></div>
 <p class="on-req">Additional peer-reviewed publications are available upon request.</p>
-</div><div class="wave" style="--c:#FFFFFF" aria-hidden="true"><svg viewBox="0 0 2880 48" preserveAspectRatio="none"><path d="M0 30C240 40 480 38 720 28S1200 20 1440 30C1680 40 1920 38 2160 28S2640 20 2880 30V48H0Z"/></svg></div></section>
+</div><div class="wave" style="--c:var(--surface)" aria-hidden="true"><svg viewBox="0 0 2880 48" preserveAspectRatio="none"><path d="M0 30C240 40 480 38 720 28S1200 20 1440 30C1680 40 1920 38 2160 28S2640 20 2880 30V48H0Z"/></svg></div></section>
 
 <section id="apps" class="white"><div class="w">
 <h2>Helpful apps for therapy and wellness</h2>
@@ -145,9 +159,9 @@ nav a.active::after{transform:scaleX(1)}
 <div class="apps">
 <div class="app"><img class="p" src="assets/app-mindfulness-coach.png" onerror="this.onerror=null;this.src='https://cdn.dorik.com/6949f5ed362c4400291e970d/images/mindfullnesscoachplay-9B4vQ.png'" alt="" loading="lazy"><div><h4>Mindfulness Coach</h4><p>Learn and practice mindfulness meditation to reduce stress, improve emotional balance, and cope with unpleasant thoughts and emotions.</p><div class="stores"><a href="https://play.google.com/store/apps/details?id=gov.va.mobilehealth.ncptsd.mindfulnesscoach" aria-label="Mindfulness Coach on Google Play"><img src="assets/badge-google-play.svg" alt="Get it on Google Play" onerror="this.onerror=null;this.src='https://cdn.dorik.com/624c0f1f9f34ad00115b5b4c/6287310b7278ca001136531e/images/button-play_xm7l5ikd.svg'"></a><a href="https://apps.apple.com/us/app/mindfulness-coach/id804284729" aria-label="Mindfulness Coach on the App Store"><img src="assets/badge-app-store.svg" alt="Download on the App Store" onerror="this.onerror=null;this.src='https://cdn.dorik.com/624c0f1f9f34ad00115b5b4c/6287310b7278ca001136531e/images/button-app_j3xe5sh7.svg'"></a></div></div></div>
 <div class="app"><img class="p" src="assets/app-insomnia-coach.png" onerror="this.onerror=null;this.src='https://cdn.dorik.com/6949f5ed362c4400291e970d/images/insmniacoach-kJLFv.png'" alt="" loading="lazy"><div><h4>Insomnia Coach</h4><p>Based on Cognitive Behavioral Therapy for Insomnia (CBT-i), with a guided plan and tools to track and improve your sleep habits.</p><div class="stores"><a href="https://play.google.com/store/apps/details?id=gov.va.mobilehealth.ncptsd.insomniacoach" aria-label="Insomnia Coach on Google Play"><img src="assets/badge-google-play.svg" alt="Get it on Google Play" onerror="this.onerror=null;this.src='https://cdn.dorik.com/624c0f1f9f34ad00115b5b4c/6287310b7278ca001136531e/images/button-play_xm7l5ikd.svg'"></a><a href="https://apps.apple.com/us/app/insomnia-coach/id1341944736" aria-label="Insomnia Coach on the App Store"><img src="assets/badge-app-store.svg" alt="Download on the App Store" onerror="this.onerror=null;this.src='https://cdn.dorik.com/624c0f1f9f34ad00115b5b4c/6287310b7278ca001136531e/images/button-app_j3xe5sh7.svg'"></a></div></div></div>
-<div class="app"><img class="p" src="assets/app-wellwithin-coach.png" onerror="this.onerror=null;this.src='https://cdn.dorik.com/6949f5ed362c4400291e970d/images/mindfullnesscoachplay2-sr_VW.png'" alt="" loading="lazy"><div><h4>WellWithin Coach <small style="font:400 .85rem var(--sans);color:#666">(for women)</small></h4><p>Designed for women, it supports mental health and common challenges like stress, depression, and trauma at every stage of life.</p><div class="stores"><a href="https://play.google.com/store/apps/details?id=gov.va.mobilehealth.ncptsd.wellwithin" aria-label="WellWithin Coach on Google Play"><img src="assets/badge-google-play.svg" alt="Get it on Google Play" onerror="this.onerror=null;this.src='https://cdn.dorik.com/624c0f1f9f34ad00115b5b4c/6287310b7278ca001136531e/images/button-play_xm7l5ikd.svg'"></a><a href="https://apps.apple.com/us/app/wellwithin-coach/id1575857804" aria-label="WellWithin Coach on the App Store"><img src="assets/badge-app-store.svg" alt="Download on the App Store" onerror="this.onerror=null;this.src='https://cdn.dorik.com/624c0f1f9f34ad00115b5b4c/6287310b7278ca001136531e/images/button-app_j3xe5sh7.svg'"></a></div></div></div>
+<div class="app"><img class="p" src="assets/app-wellwithin-coach.png" onerror="this.onerror=null;this.src='https://cdn.dorik.com/6949f5ed362c4400291e970d/images/mindfullnesscoachplay2-sr_VW.png'" alt="" loading="lazy"><div><h4>WellWithin Coach <small style="font:400 .85rem var(--sans);color:var(--muted)">(for women)</small></h4><p>Designed for women, it supports mental health and common challenges like stress, depression, and trauma at every stage of life.</p><div class="stores"><a href="https://play.google.com/store/apps/details?id=gov.va.mobilehealth.ncptsd.wellwithin" aria-label="WellWithin Coach on Google Play"><img src="assets/badge-google-play.svg" alt="Get it on Google Play" onerror="this.onerror=null;this.src='https://cdn.dorik.com/624c0f1f9f34ad00115b5b4c/6287310b7278ca001136531e/images/button-play_xm7l5ikd.svg'"></a><a href="https://apps.apple.com/us/app/wellwithin-coach/id1575857804" aria-label="WellWithin Coach on the App Store"><img src="assets/badge-app-store.svg" alt="Download on the App Store" onerror="this.onerror=null;this.src='https://cdn.dorik.com/624c0f1f9f34ad00115b5b4c/6287310b7278ca001136531e/images/button-app_j3xe5sh7.svg'"></a></div></div></div>
 </div>
-</div><div class="wave" style="--c:#A7C1B5" aria-hidden="true"><svg viewBox="0 0 2880 48" preserveAspectRatio="none"><path d="M0 30C240 40 480 38 720 28S1200 20 1440 30C1680 40 1920 38 2160 28S2640 20 2880 30V48H0Z"/></svg></div></section>
+</div><div class="wave" style="--c:var(--sage-bg)" aria-hidden="true"><svg viewBox="0 0 2880 48" preserveAspectRatio="none"><path d="M0 30C240 40 480 38 720 28S1200 20 1440 30C1680 40 1920 38 2160 28S2640 20 2880 30V48H0Z"/></svg></div></section>
 
 <section id="more" class="sage"><div class="w">
 <h2>Additional resources</h2>
@@ -160,21 +174,22 @@ nav a.active::after{transform:scaleX(1)}
 <div class="grp"><h3>General mental health and wellness tools</h3>
 <a class="link" href="https://www.psychologytools.com"><b>Psychology Tools: free worksheets and info</b><span>Free worksheets and guides on common mental health topics.</span></a>
 <a class="link" href="https://screening.mhanational.org"><b>Mental Health America: screening tools</b><span>Free, confidential online screening tools for a range of mental health conditions.</span></a></div>
-</div></div><div class="wave" style="--c:#F4F2EE" aria-hidden="true"><svg viewBox="0 0 2880 48" preserveAspectRatio="none"><path d="M0 30C240 40 480 38 720 28S1200 20 1440 30C1680 40 1920 38 2160 28S2640 20 2880 30V48H0Z"/></svg></div></section>
+</div></div><div class="wave" style="--c:var(--sand)" aria-hidden="true"><svg viewBox="0 0 2880 48" preserveAspectRatio="none"><path d="M0 30C240 40 480 38 720 28S1200 20 1440 30C1680 40 1920 38 2160 28S2640 20 2880 30V48H0Z"/></svg></div></section>
 
 <section id="crisis"><div class="w"><div class="crisis" role="note">
 <div><h2>988 Suicide &amp; Crisis Lifeline</h2><p>The national crisis line, available 24/7, for immediate support. Call or text 988. In immediate danger, call 911.</p></div>
 <div class="b"><a class="btn" href="tel:988">Call 988</a><a class="btn" href="sms:988">Text 988</a></div>
-</div></div><div class="wave" style="--c:#3E7D73" aria-hidden="true"><svg viewBox="0 0 2880 48" preserveAspectRatio="none"><path d="M0 30C240 40 480 38 720 28S1200 20 1440 30C1680 40 1920 38 2160 28S2640 20 2880 30V48H0Z"/></svg></div></section>
+</div></div><div class="wave" style="--c:var(--cta-bg)" aria-hidden="true"><svg viewBox="0 0 2880 48" preserveAspectRatio="none"><path d="M0 30C240 40 480 38 720 28S1200 20 1440 30C1680 40 1920 38 2160 28S2640 20 2880 30V48H0Z"/></svg></div></section>
 
 <section class="cta"><div class="w">
 <h2>Ready to take the next step?</h2>
 <p>Book a free 15-minute phone consultation to see if we’re a good fit.</p>
-<a class="btn" href="index.html#contact">Contact me</a>
-</div><div class="wave" style="--c:#2E2E2E" aria-hidden="true"><svg viewBox="0 0 2880 48" preserveAspectRatio="none"><path d="M0 30C240 40 480 38 720 28S1200 20 1440 30C1680 40 1920 38 2160 28S2640 20 2880 30V48H0Z"/></svg></div></section>
+<a class="btn book" href="index.html#contact">Contact me</a>
+</div><div class="wave" style="--c:var(--foot)" aria-hidden="true"><svg viewBox="0 0 2880 48" preserveAspectRatio="none"><path d="M0 30C240 40 480 38 720 28S1200 20 1440 30C1680 40 1920 38 2160 28S2640 20 2880 30V48H0Z"/></svg></div></section>
 </main>
 
 <footer><div class="w"><div>Dr. Jeane Bosch, Licensed Clinical Psychologist (PSY30821). Telehealth for adults in California.</div><a href="index.html">Back to home</a></div></footer>
+<div class="mbar" id="mbar"><a class="btn book" href="index.html#contact">Book a free call</a></div>
 <script>
 var m=document.querySelector('.menu'),n=document.querySelector('nav');
 m.addEventListener('click',function(){var o=n.classList.toggle('open');m.setAttribute('aria-expanded',o);m.textContent=o?'✕':'☰'});
@@ -190,6 +205,17 @@ els.forEach(function(el){var p=el.parentNode,i=cnt.get(p)||0;cnt.set(p,i+1);el.c
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var el=e.target;el.classList.add('on');io.unobserve(el);setTimeout(function(){el.classList.remove('rv','on');el.style.removeProperty('--d')},1300)})},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
 els.forEach(function(el){io.observe(el)});
 })();
+(function(){var root=document.documentElement,tg=document.querySelector('.tg'),mt=document.querySelector('meta[name=theme-color]');
+function setT(t,save){root.setAttribute('data-theme',t);tg.setAttribute('aria-pressed',t==='dark');tg.setAttribute('aria-label',t==='dark'?'Switch to light mode':'Switch to dark mode');if(mt)mt.setAttribute('content',t==='dark'?'#0F1B1A':'#F4F2EE');if(save){try{localStorage.setItem('theme',t)}catch(e){}}}
+setT(root.getAttribute('data-theme')||'light',false);
+tg.addEventListener('click',function(){setT(root.getAttribute('data-theme')==='dark'?'light':'dark',true)});
+var mq=matchMedia('(prefers-color-scheme: dark)');if(mq.addEventListener)mq.addEventListener('change',function(e){var s;try{s=localStorage.getItem('theme')}catch(x){}if(!s)setT(e.matches?'dark':'light',false)});
+})();
+(function(){var mb=document.getElementById('mbar'),ct=document.getElementById('contact')||document.querySelector('.cta');
+if(mb&&ct&&'IntersectionObserver' in window)new IntersectionObserver(function(e){mb.classList.toggle('hide',e[0].isIntersecting)},{threshold:.15}).observe(ct)})();
+var BOOKING_URL=''; /* incolla qui il link di prenotazione SimplePractice */
+(function(){if(!BOOKING_URL)return;document.querySelectorAll('a.book').forEach(function(a){a.href=BOOKING_URL;a.target='_blank';a.rel='noopener'});
+var bk=document.getElementById('bk'),f=document.getElementById('f');if(bk&&f){bk.hidden=false;f.hidden=true;document.getElementById('showForm').onclick=function(){f.hidden=false;bk.hidden=true;var i=f.querySelector('input');if(i)i.focus()}}})();
 </script>
 </body>
 </html>
